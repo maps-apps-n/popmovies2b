@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.popmovies2b.MainActivity">
+
+    <item
+        android:id="@+id/sorting_menu"
+        android:icon="@drawable/sort"
+        android:title="@string/sort"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/top"
+                android:title="@string/highest_rated" />
+            <item
+                android:id="@+id/pop"
+                android:title="@string/pop" />
+            <item
+                android:id="@+id/fav"
+                android:title="@string/favorites" />
+        </menu>
+    </item>
+</menu>

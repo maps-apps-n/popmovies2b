@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+    <string name="rating">Rating: </string>
+    <string name="desc">description goes here </string>
+    <string name="reviews">Reviews: </string>
+    <string name="description">Synopsis</string>
+    <string name="trailers">Trailers: </string>
+    <string name="release_date">Released: </string>
+    <string name="sort">Sort by: </string>
+    <string name="favorites">Favorites </string>
+    <string name="pop">Most Popular </string>
+    <string name="highest_rated">Highest Rated </string>
+    <string name="example">Movie Example </string>
+</resources>

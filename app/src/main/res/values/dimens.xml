@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="padding_reviews">5dp</dimen>
+    <dimen name="padding_reviews_top">8dp</dimen>
+    <dimen name="padding_trailers">10dp</dimen>
+    <dimen name="padding_play">12dp</dimen>
+    <dimen name="reviews_text">16sp</dimen>
+    <dimen name="cardRadius">2dp</dimen>
+    <dimen name="cardElev">3dp</dimen>
+    <dimen name="movie_title">26dp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_desc">18sp</dimen>
+    <dimen name="img_width">0dp</dimen>
+    <dimen name="layout_min">200dp</dimen>
+    <dimen name="layout_top">12dp</dimen>
+    <dimen name="layout_bottom">10dp</dimen>
+    <dimen name="layout_bottom_fab">10dp</dimen>
+    <dimen name="play_dimens">24dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+</resources>
