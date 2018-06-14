@@ -1,6 +1,7 @@
 package com.example.android.popmovies2b;
 
 import android.content.ContentProvider;
+import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.UriMatcher;
@@ -66,6 +67,7 @@ public class Provider extends ContentProvider {
                         null,
                         null,
                         sortOrder);
+                getContext().getContentResolver().notifyChange(uri, null);
                 return cursor;
             }
             case MOVIES_INCL_ID: {
@@ -77,6 +79,7 @@ public class Provider extends ContentProvider {
                         null,
                         null,
                         sortOrder);
+                getContext().getContentResolver().notifyChange(uri, null);
                 return cursor;
             }
             default: {
@@ -127,6 +130,7 @@ public class Provider extends ContentProvider {
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
         }
+        getContext().getContentResolver().notifyChange(uri, null);
         return delNo;
     }
 
