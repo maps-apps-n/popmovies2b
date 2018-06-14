@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 
 
-public class TrailersAdapter extends RecyclerView.Adapter<TrailersAdapter.ReviewHolder> {
+public class TrailersAdapter extends RecyclerView.Adapter<TrailersAdapter.RevHolder> {
     private ArrayList<Trailers> trailers;
     private Context context;
 
@@ -28,13 +28,13 @@ public class TrailersAdapter extends RecyclerView.Adapter<TrailersAdapter.Review
     }
 
     @Override
-    public TrailersAdapter.ReviewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RevHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.trailers, parent, false);
-        return new ReviewHolder(v);
+        return new RevHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(TrailersAdapter.ReviewHolder holder, int position) {
+    public void onBindViewHolder(RevHolder holder, int position) {
         holder.title.setText(trailers.get(position).getName());
     }
 
@@ -43,10 +43,10 @@ public class TrailersAdapter extends RecyclerView.Adapter<TrailersAdapter.Review
         return trailers.size();
     }
 
-    public class ReviewHolder extends RecyclerView.ViewHolder {
+    public class RevHolder extends RecyclerView.ViewHolder {
         public TextView title;
 
-        public ReviewHolder(View itemView) {
+        public RevHolder(View itemView) {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.trailer);
             itemView.setOnClickListener(new View.OnClickListener() {
